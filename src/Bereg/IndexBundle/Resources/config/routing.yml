@@ -1,0 +1,4 @@
+BeregIndexBundle_homepage:
+    resource: "@BeregIndexBundle/Resources/config/routing.yml"
+    type:  annotation
+    defaults: { _controller: BeregIndexBundle:Default:index }
