@@ -1,49 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Demo Bundle{% endblock %}</title>
-        <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
-        <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/demo.css') }}" />
-    </head>
-    <body>
-        <div id="symfony-wrapper">
-            <div id="symfony-header">
-                <a href="{{ path('_welcome') }}">
-                    <img src="{{ asset('bundles/acmedemo/images/logo.gif') }}" alt="Symfony logo" />
-                </a>
-                <form id="symfony-search" method="GET" action="http://symfony.com/search">
-                    <label for="symfony-search-field"><span>Search on Symfony Website</span></label>
-                    <input name="q" id="symfony-search-field" type="search" placeholder="Search on Symfony website" class="medium_txt" />
-                    <input type="submit" class="symfony-button-grey" value="OK" />
-                </form>
-            </div>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-            {% for flashMessage in app.session.flashbag.get('notice') %}
-                <div class="flash-message">
-                    <em>Notice</em>: {{ flashMessage }}
+<head>
+    {% block header %}
+        <title>{%block title%}{{ page_title | default('ООО "Берег" | Поставки производственного оборудования из Китая')}}{%endblock title%}</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <!--<base href="/http://bereg-cn.ru/3/"> -->
+        <meta http-equiv="Content-Style-Type" content="text/css"/>
+        <link rel="shortcut icon" href="/favicon.png" type="image/png"/>
+        <meta name="description" content="{% block description %}{{ page_description | default('Деловые отношения с Китаем. Оборудование из Китая. Обучение в Китае. Перевод на Китайский. Экскурсии по заводам Китая')}}{% endblock description%}"/>
+        <meta name="keywords" content="{% block keywords %}{{ page_keywords | default('Поставки производственного оборудования из Китая')}}{% endblock keywords%}"/>
+        {% block stylesheets %}
+            {% stylesheets '@BeregIndexBundle/Resources/public/css/new/*' filter='cssrewrite'  %}
+                <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+        {% endblock %}
+    {% endblock header %}
+</head>
+<body>
+<table class="main" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td>
+            <table class="head_table" cellpadding="0" cellspacing="0" border="0"> <!-- Head -->
+                <tr>
+                    <td valign="top" height="91">
+                        <div class="stanok"></div>
+                        {% block top_menu %}
+                        {% include 'BeregIndexBundle:_block:topMenu.html.twig'%}
+                        {% endblock top_menu %}
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" align="right"><img src="{{ asset('/images/flag.png') }}" alt="" class="flag"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="lang">
+                            <a href="/index.php"><img src="{{ asset('/images/RU.gif') }}" alt="Rus"><span> RU</span></a>
+                            <!--        <a href="/cn/index.php"><img src="{{ asset('/images/CN.gif') }}" alt="Cn" > <span> CN</span></a>-->
+                        </div>
+                        <div class="search">
+                            <form name="search" action="search.php" method="POST">
+                                <input id="find" class="search" name="search" type="text" value="Поиск">
+                                <input class="glass" type="image" name="search_button" src="{{ asset('/images/glass.png') }}" width="28" height="30">
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="shadow"></td>
+                </tr>
+            </table>
+            <!-- end head -->
+            <div class="left_menu_sh">         <!-- left top menu -->
+                {% block left_menu %}
+                {% include 'BeregIndexBundle:_block:leftMenu.html.twig'%}
+                {% endblock left_menu %}
+                <div class="logo">&nbsp;</div>
+            </div>
+            <!-- end left top menu -->
+            <div class="shadow4">              <!-- shadow main table -->
+                <div class="shadow3">
+                    <table class="main_content" cellpadding="0" cellspacing="0">
+                        <tr valign="top" height="600">
+                            <td width="222">           <!-- left -->
+                                {% block login %}
+                                {%include 'BeregIndexBundle:_block:login.html.twig' with {'user': false} %}
+                                {% endblock login %}
+                                {% block tree %}
+                                <div class="tree"></div>
+                                {% endblock tree %}
+                                {% block news %}
+                                {% include 'BeregIndexBundle:_block:news.html.twig' with {'news': false } %}
+                                {% endblock news%}
+                            </td>
+                            <!-- end left -->
+                            <td>           <!-- right -->
+                                <div class="main_content">       <!-- Body -->
+                                    {% block content %}
+                                    <h1>Главная</h1>
+
+                                    <p>Наша компания работает с китаем с 2002 года и специализируется на поиске необходимой
+                                        информации о предприятиях, производствах, оборудовании и товарах Китая. Мы поможем
+                                        предпринимателям и компаниям, которые ведут дела с Китаем и планируют начать сотрудничество
+                                        с Китайскими фабриками и заводами найти необходимую для работы информацию.</p>
+
+                                    <p class="lined">Мы предлагаем Вам надежные, взвешанные и проверенные системы успешного ведения
+                                        бизнеса в Китае и поставки конкурентноспособной продукции с китайских заводов и фабрик, так
+                                        же, у нас Вы можете узнать о предстоящих выставках проводимых в Китае и с нашей помощью
+                                        принять участи в них.</p>
+
+                                    <p>Мы готовы содействовать развитию Вашего бизнеса оказываея услуги поиска необходимых товаро и
+                                        оборудования в Китае, предоставляя услуги переводчиков, предоставляя сведения о китайских
+                                        предприятиях а также о товарах и оборудованиее, производимых в Китае. А так же мы поставляем
+                                        китайское оборудование - термопласт-автоматы, экструдеры, испытательное оборудование; все
+                                        это оборудование сегодня успешно работает на предприятиях наших заказчиков.</p>
+
+                                    <p>В нашей компании работают только высококвалифицированные специалисты с многолетним опытом
+                                        работы в Китае. Хорошее знание китайского рынка и постоянный его мониторинг позволяет нашим
+                                        сотрудникам добиться наилучших результатов в процессе работы и таким образом экономить
+                                        средства и время клиента. Сейчас мы имеем много надежных партнеров в Китае - грамотных
+                                        профессионалов из числа переводчиков, инженеров и технологов. Мы уверены, что наши знания и
+                                        сведения, которыми мы владеем, помогут российским и китайским предпринимателям в развитии
+                                        успешного и взаимовыгодного сотрудничества между ними.</p>
+                                    {% endblock content %}
+                                </div>
+                                <!-- end Body -->
+                            </td>
+                            <!-- end right -->
+                        </tr>
+                        <tr>                   <!-- foot -->
+                            <td class="foot" align="left" valign="middle"><a href="/sitemap.php">Карта сайта</td>
+                            <td class="foot" align="right" valign="middle">
+                                Разработка сайта Дизайн - студия <a href="http://ruswebmasters.ru/">RusWebMaster</a>
+                            </td>
+                        </tr>
+                        <!-- end foot -->
+                        <tr>
+                            <td colspan="2" class="shadow2"></td>
+                        </tr>
+                    </table>
                 </div>
-            {% endfor %}
-
-            {% block content_header %}
-                <ul id="menu">
-                    {% block content_header_more %}
-                        <li><a href="{{ path('_demo') }}">Demo Home</a></li>
-                    {% endblock %}
-                </ul>
-
-                <div style="clear: both"></div>
-            {% endblock %}
-
-            <div class="symfony-content">
-                {% block content %}
-                {% endblock %}
             </div>
+            <!-- end shadow main table -->
+        </td>
+    </tr>
+</table>
+<div></div>
+<script type="text/javascript">
+    $(function () {
+        $('a.img').lightBox();
+    });
+</script>
 
-            {% if code is defined %}
-                <h2>Code behind this page</h2>
-                <div class="symfony-content">{{ code|raw }}</div>
-            {% endif %}
-        </div>
-    </body>
+<div style='position: absolute; top:-9999px;'>
+    <img src='/images/activeLink.png'/> <img src='/images/linkrightActive.png'/> <img src='/images/submenu.png'/>
+</div>
+{% block javascripts %}
+{% javascripts '@BeregIndexBundle/Resources/public/js/*' %}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}
+</body>
 </html>

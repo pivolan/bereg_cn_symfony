@@ -13,11 +13,11 @@ use JMS\SecurityExtraBundle\Annotation\Secure;
 class DefaultController extends Controller
 {
 	/**
-	 * @Route("/{name}", name="index")
+	 * @Route("/")
 	 * @Template()
 	 */
-	public function indexAction($name)
+	public function indexAction()
     {
-        return array('name' => $name);
+        return array();
     }
 }
