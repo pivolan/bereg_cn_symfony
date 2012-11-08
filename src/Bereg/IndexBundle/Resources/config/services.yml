@@ -2,6 +2,5 @@ parameters:
 #    bereg_index.example.class: Bereg\IndexBundle\Example
 
 services:
-#    bereg_index.example:
-#        class: %bereg_index.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+#    bereg_index.product_repository:
+#        class: Bereg\IndexBundle\Entity\ProductRepository

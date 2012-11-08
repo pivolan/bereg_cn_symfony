@@ -5,35 +5,38 @@ namespace Bereg\IndexBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Bereg\IndexBundle\Entity\Product
+ * @ORM\Entity
+ * @ORM\Table(name="product")
+ * @ORM\Entity(repositoryClass="Bereg\IndexBundle\Entity\ProductRepository")
  */
 class Product
 {
     /**
-     * @var integer $id
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    protected $id;
 
     /**
-     * @var string $name
+     * @ORM\Column(type="string", length=255)
      */
-    private $name;
+    protected $title;
 
     /**
-     * @var decimal $price
+     * @ORM\Column(type="text")
      */
-    private $price;
+    protected $text;
 
     /**
-     * @var text $description
+     * @ORM\ManyToOne(targetEntity="Product")
      */
-    private $description;
-
+    protected $parent;
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -41,68 +44,68 @@ class Product
     }
 
     /**
-     * Set name
+     * Set title
      *
-     * @param string $name
+     * @param string $title
      * @return Product
      */
-    public function setName($name)
+    public function setTitle($title)
     {
-        $this->name = $name;
+        $this->title = $title;
         return $this;
     }
 
     /**
-     * Get name
+     * Get title
      *
-     * @return string 
+     * @return string
      */
-    public function getName()
+    public function getTitle()
     {
-        return $this->name;
+        return $this->title;
     }
 
     /**
-     * Set price
+     * Set text
      *
-     * @param decimal $price
+     * @param String $text
      * @return Product
      */
-    public function setPrice($price)
+    public function setText($text)
     {
-        $this->price = $price;
+        $this->text = $text;
         return $this;
     }
 
     /**
-     * Get price
+     * Get text
      *
-     * @return decimal 
+     * @return String
      */
-    public function getPrice()
+    public function getText()
     {
-        return $this->price;
+        return $this->text;
     }
 
     /**
-     * Set description
+     * Set parent
      *
-     * @param text $description
+     * @param \Bereg\IndexBundle\Entity\Product $parent
      * @return Product
      */
-    public function setDescription($description)
+    public function setParent(\Bereg\IndexBundle\Entity\Product $parent = null)
     {
-        $this->description = $description;
+        $this->parent = $parent;
         return $this;
     }
 
     /**
-     * Get description
+     * Get parent
      *
-     * @return text 
+     * @return \Bereg\IndexBundle\Entity\Product
      */
-    public function getDescription()
+    public function getParent()
     {
-        return $this->description;
+        return $this->parent;
     }
 }
