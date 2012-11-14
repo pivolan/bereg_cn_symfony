@@ -17,7 +17,7 @@ class LoadProductData implements FixtureInterface
     function load(ObjectManager $manager)
     {
         $product = new Product();
-        $product->setTitle('hello first product page');
+        $product->setTitle('hello first page');
         $product->setText(' this is a text');
 
         $manager->persist($product);

@@ -27,6 +27,7 @@
 
 </head>
 <body>
+{% block body %}
 <div id="wrapper">
 <div id="header">
     <h1><a href="/en">Finamac</a></h1>
@@ -55,76 +56,7 @@
         <!-- http://www.LiveZilla.net Tracking Code --> </h3>
     <br class="c"/>
 
-    <div id="nav">
-        <ul>
-            <li><a href="/en" class="openMenu">Главная</a></li>
-            <li><a href="#">Производственные линии</a>
-                <ul>
-                    <li><a href="/en/sobre/historia">History</a></li>
-                    <li><a href="/en/sobre/missao">Mission</a></li>
-                    <li><a href="/en/sobre/tecnologia">Technology</a></li>
-                    <li><a href="/en/sobre/como-chegar">Location</a></li>
-                    <li><a href="/en/sobre/parceiros">Partners</a></li>
-                    <li><a href="/en/sobre">All</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Мини заводы</a>
-                <ul>
-                    <li><a href="/en/videos/produtos">Products</a></li>
-                    <li><a href="/en/videos/cursos">Courses</a></li>
-                    <li><a href="/en/videos/outros">Others</a></li>
-                    <li><a href="/en/videos">All</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Оборудование</a>
-                <ul>
-                    <li class="nav_prod"><a href="/en/produtos/iniciante">Beginners</a></li>
-                    <li class="nav_prod"><a href="/en/produtos/intermediario">Intermediates</a></li>
-                    <li class="nav_prod"><a href="/en/produtos/industrial">Industrial</a></li>
-                    <li class="nav_prod"><a href="/en/produtos/gelateria">Gelateria</a></li>
-                    <li class="nav_prod"><a href="/en/produtos/chocolate">Chocolate</a></li>
-                    <li class="nav_prod"><a href="http://www.finamac.com.br/catalogo/" class="openMenu" target="_blank">Catalog</a>
-                    </li>
-                    <li><a href="/en/produtos">All</a></li>
-                </ul>
-            </li>
-            <li><a href="/en/noticias">Услуги</a></li>
-            <li><a href="/en/assistencia">Поиск производителей</a>
-                <ul>
-                    <li><a href="/en/assistencia/localiza">Find a technician</a></li>
-                    <li><a href="/en/assistencia/contato">Technical consult</a></li>
-                    <li><a href="/en/assistencia/treinamento">Train your technician</a></li>
-                    <li><a href="/en/assistencia/credenciamento">Accreditation</a></li>
-                </ul>
-            </li>
-            <li><a>О нас</a>
-                <ul>
-                    <li class="nav_prod"><a href="/en/cursos/chocolate-en">Chocolate</a></li>
-                    <li class="nav_prod"><a href="/en/cursos/sorvete-avancado-en">Advanced Ice Cream</a></li>
-                    <li class="nav_prod"><a href="/en/cursos/sorvete-basico-en">Basic ice Cream</a></li>
-                    <li class="nav_prod"><a href="/en/cursos/indutrial-ice-cream">Industrial Ice cream</a></li>
-                </ul>
-            </li>
-            <li><a href="/en/faq">Статьи</a>
-                <ul>
-                    <li><a href="/en/faq/duvidas-gerais">General Doubts</a></li>
-                    <li><a href="/en/faq/como-comprar">Ordering</a></li>
-                    <li><a href="/en/faq/pos-venda">After Sales</a></li>
-                    <li><a href="/en/faq/cliente-internacional">International Customers</a></li>
-                    <li><a href="/en/faq/agente-internacional">How to be an international agent</a></li>
-                    <li><a href="/en/faq/tecnico-internacional">How to be an international technical</a></li>
-                </ul>
-            </li>
-            <li class="zero"><a href="/en/atendimento">Контакты</a>
-                <ul>
-                    <li><a href="/en/atendimento/consulta-produtos">Consult our products</a></li>
-                    <li><a href="/en/atendimento/contato">Suggestions or complaints</a></li>
-                    <li><a href="/en/atendimento/trabalhe-conosco">Work with us</a></li>
-                    )(^2
-                </ul>
-            </li>
-        </ul>
-    </div>
+    {% include 'BeregIndexBundle:_Include:navigation.html.twig' %}
 </div>
 <!--/header-->
 <div id="rotate">
@@ -472,5 +404,6 @@
         <br class="c"/>
     </div>
 </div>
+{% endblock %}
 </body>
 </html>

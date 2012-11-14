@@ -33,15 +33,22 @@ class DefaultController extends ControllerBase
     }
 
     /**
-     * @Route("/{productId}")
+     * Показывает страницу оборудования
+     * @Route("/{slug}/{productId}")
      * @Template()
      *
-     * @param Request $request
+     * @param $slug
+     * @param $productId
+     * @internal param \Symfony\Component\HttpFoundation\Request $request
      * @return array
      */
-    public function productAction($productId)
+    public function productAction($slug, $productId)
     {
+        /** @var $product \Bereg\IndexBundle\Entity\Product */
         $product = $this->_productRepository->find($productId);
+        if ($product->getTitleSlug() != $slug) {
+            return $this->redirect($this->generateUrl('bereg_index_default_product', array('slug' => $product->getTitleSlug(), 'productId' => $productId)), 301);
+        }
         return array('product' => $product);
     }
 

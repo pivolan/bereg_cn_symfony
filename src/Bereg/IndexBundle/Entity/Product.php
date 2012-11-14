@@ -108,4 +108,9 @@ class Product
     {
         return $this->parent;
     }
+
+    public function getTitleSlug()
+    {
+        return trim(str_replace('/', '', $this->getTitle()));
+    }
 }
