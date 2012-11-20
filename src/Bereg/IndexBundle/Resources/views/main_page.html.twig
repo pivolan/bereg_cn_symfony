@@ -28,382 +28,391 @@
 </head>
 <body>
 {% block body %}
-<div id="wrapper">
-<div id="header">
-    <h1><a href="/en">Finamac</a></h1>
+    <div id="wrapper">
+    <div id="header">
+        <h1><a href="/en">Finamac</a></h1>
 
-    <div class="r">
-        <ol id="lang">
-            <li><a href="/es/">Español</a></li>
-            <li id="en"><a class="current" href="/en/">English</a></li>
-            <li id="en"><a href="/br/">Português</a></li>
-        </ol>
-        <form id="searchform" action="/en/busca" method="get">
-            <input name="palavra" type="text" value=""/> <input type="submit" value=" "/>
-        </form>
+        <div class="r">
+            <ol id="lang">
+                <li><a href="/es/">Español</a></li>
+                <li id="en"><a class="current" href="/en/">English</a></li>
+                <li id="en"><a href="/br/">Português</a></li>
+            </ol>
+            <form id="searchform" action="/en/busca" method="get">
+                <input name="palavra" type="text" value=""/> <input type="submit" value=" "/>
+            </form>
+        </div>
+        <h3>Online chat ::
+            <!-- http://www.LiveZilla.net Chat Button Link Code --><a href="javascript:void(window.open('http://www.finamac.com.br/atendimento/livezilla.php?intgroup=YXRlbmRpbWVudG9FTg==&amp;hg=P0F0ZW5kaW1lbnRv&amp;reset=true','','width=590,height=890,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=no'))"><img width="54" height="10" border="0" alt="LiveZilla Live Help" src="http://www.finamac.com.br/atendimento/image.php?id=06&amp;hg=P0F0ZW5kaW1lbnRv"></a>
+            <noscript>&lt;div&gt;&lt;a
+                href="http://www.finamac.com.br/atendimento/livezilla.php?intgroup=YXRlbmRpbWVudG9FTg==&amp;amp;hg=P0F0ZW5kaW1lbnRv&amp;amp;reset=true"
+                target="_blank"&gt;Start Live Help Chat&lt;/a&gt;&lt;/div&gt;</noscript>
+            <!-- http://www.LiveZilla.net Chat Button Link Code --><!-- http://www.LiveZilla.net Tracking Code -->
+            <div style="display:none" id="livezilla_tracking"></div>
+            <script type="text/javascript">&lt;!--DON
+            'T REMOVE ANY LINE BREAKS OR TAGS --&gt;/* &lt;![CDATA[ */var script = document.createElement("script");script.type="text/javascript";var src = "http://www.finamac.com.br/atendimento/server.php?request=track&amp;output=jcrpt&amp;nse="+Math.random();setTimeout("script.src=src;document.getElementById('
+            livezilla_tracking
+            ').appendChild(script)",1);/* ]]&gt; */</script>
+            <!-- http://www.LiveZilla.net Tracking Code --> </h3>
+        <br class="c"/>
+
+        {% include 'BeregIndexBundle:_Include:navigation.html.twig' %}
     </div>
-    <h3>Online chat ::
-        <!-- http://www.LiveZilla.net Chat Button Link Code --><a href="javascript:void(window.open('http://www.finamac.com.br/atendimento/livezilla.php?intgroup=YXRlbmRpbWVudG9FTg==&amp;hg=P0F0ZW5kaW1lbnRv&amp;reset=true','','width=590,height=890,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=no'))"><img width="54" height="10" border="0" alt="LiveZilla Live Help" src="http://www.finamac.com.br/atendimento/image.php?id=06&amp;hg=P0F0ZW5kaW1lbnRv"></a>
-        <noscript>&lt;div&gt;&lt;a
-            href="http://www.finamac.com.br/atendimento/livezilla.php?intgroup=YXRlbmRpbWVudG9FTg==&amp;amp;hg=P0F0ZW5kaW1lbnRv&amp;amp;reset=true"
-            target="_blank"&gt;Start Live Help Chat&lt;/a&gt;&lt;/div&gt;</noscript>
-        <!-- http://www.LiveZilla.net Chat Button Link Code --><!-- http://www.LiveZilla.net Tracking Code -->
-        <div style="display:none" id="livezilla_tracking"></div>
-        <script type="text/javascript">&lt;!--DON
-        'T REMOVE ANY LINE BREAKS OR TAGS --&gt;/* &lt;![CDATA[ */var script = document.createElement("script");script.type="text/javascript";var src = "http://www.finamac.com.br/atendimento/server.php?request=track&amp;output=jcrpt&amp;nse="+Math.random();setTimeout("script.src=src;document.getElementById('
-        livezilla_tracking
-        ').appendChild(script)",1);/* ]]&gt; */</script>
-        <!-- http://www.LiveZilla.net Tracking Code --> </h3>
-    <br class="c"/>
+    <!--/header-->
+    <div id="rotate">
+        <ul id="headPics">
+            <li class="active">
+                <div class="infopics"> Fantastic Popsicle Factory <p></p></div>
+                <a href="http://www.finamac.com.br/en/noticias/2012/08/336/fantastic-popsicle-factory"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-fantastic-popsicle-factory-en.jpg') }}" width="735" height="170" border="0"/></a>
+            </li>
+            <li>
+                <div class="infopics"> Industrial Business Pack <p></p></div>
+                <a href="http://www.finamac.com.br/en/noticias/2012/08/341/industrial-business-pack"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-industrial-business-pack-en.jpg') }}" width="735" height="170" border="0"/></a>
+            </li>
+            <li>
+                <div class="infopics"> Master Business Pack <p></p></div>
+                <a href="http://www.finamac.com.br/en/noticias/2012/08/342/master-business-pack"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-master-business-pack-en.jpg') }}" width="735" height="170" border="0"/></a>
+            </li>
+            <li>
+                <div class="infopics"> Professional Kit <p></p></div>
+                <a href="http://www.finamac.com.br/en/noticias/2012/08/338/professional-kit"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-professional-kit-en.jpg') }}" width="735" height="170" border="0"/></a>
+            </li>
+            <li>
+                <div class="infopics"> Slim Kit <p></p></div>
+                <a href="http://www.finamac.com.br/en/noticias/2012/08/337/slim-kit"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-slim-kit-en.jpg') }}" width="735" height="170" border="0"/></a>
+            </li>
+            <li>
+                <div class="infopics"> Smart Factory <p></p></div>
+                <a href="http://www.finamac.com.br/en/noticias/2012/08/339/smart-factory"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-smart-factory-en.jpg') }}" width="735" height="170" border="0"/></a>
+            </li>
+            <li>
+                <div class="infopics"> Smart Factory Plus <p></p></div>
+                <a href="http://www.finamac.com.br/en/noticias/2012/08/340/smart-factory-plus"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-smart-factory-plus-en.jpg') }}" width="735" height="170" border="0"/></a>
+            </li>
+            <li>
+                <div class="infopics"> Turbo 100 <p></p></div>
+                <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-turbo-100"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-turbo100-en.jpg') }}" width="735" height="170" border="0"/></a>
+            </li>
+        </ul>
+        <ul id="paginatepics"></ul>
+    </div>
+    <div id="content-820p"><h3 class="titlename top5">{% block title_text %} Main page {% endblock %}</h3>
 
-    {% include 'BeregIndexBundle:_Include:navigation.html.twig' %}
-</div>
-<!--/header-->
-<div id="rotate">
-    <ul id="headPics">
-        <li class="active">
-            <div class="infopics"> Fantastic Popsicle Factory <p></p></div>
-            <a href="http://www.finamac.com.br/en/noticias/2012/08/336/fantastic-popsicle-factory"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-fantastic-popsicle-factory-en.jpg') }}" width="735" height="170" border="0"/></a>
-        </li>
-        <li>
-            <div class="infopics"> Industrial Business Pack <p></p></div>
-            <a href="http://www.finamac.com.br/en/noticias/2012/08/341/industrial-business-pack"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-industrial-business-pack-en.jpg') }}" width="735" height="170" border="0"/></a>
-        </li>
-        <li>
-            <div class="infopics"> Master Business Pack <p></p></div>
-            <a href="http://www.finamac.com.br/en/noticias/2012/08/342/master-business-pack"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-master-business-pack-en.jpg') }}" width="735" height="170" border="0"/></a>
-        </li>
-        <li>
-            <div class="infopics"> Professional Kit <p></p></div>
-            <a href="http://www.finamac.com.br/en/noticias/2012/08/338/professional-kit"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-professional-kit-en.jpg') }}" width="735" height="170" border="0"/></a>
-        </li>
-        <li>
-            <div class="infopics"> Slim Kit <p></p></div>
-            <a href="http://www.finamac.com.br/en/noticias/2012/08/337/slim-kit"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-slim-kit-en.jpg') }}" width="735" height="170" border="0"/></a>
-        </li>
-        <li>
-            <div class="infopics"> Smart Factory <p></p></div>
-            <a href="http://www.finamac.com.br/en/noticias/2012/08/339/smart-factory"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-smart-factory-en.jpg') }}" width="735" height="170" border="0"/></a>
-        </li>
-        <li>
-            <div class="infopics"> Smart Factory Plus <p></p></div>
-            <a href="http://www.finamac.com.br/en/noticias/2012/08/340/smart-factory-plus"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-smart-factory-plus-en.jpg') }}" width="735" height="170" border="0"/></a>
-        </li>
-        <li>
-            <div class="infopics"> Turbo 100 <p></p></div>
-            <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-turbo-100"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/header-ingles/banner-topo-turbo100-en.jpg') }}" width="735" height="170" border="0"/></a>
-        </li>
-    </ul>
-    <ul id="paginatepics"></ul>
-</div>
-<div id="content-820p"><h3 class="titlename top5">Equipment for</h3>
+    <div class="content">
+        <div id="artigo">
+            <div class="post">
+                {% block body_text %}
+                    <h2>OUR HISTORY</h2>
 
-<div class="content">
-    <div class="custom_tab">
-        <ul id="produtoHome">
-            <li class="aberto"><a href="#iniciantes">Ice cream and popsicle-Small</a></li>
-            <li><a href="#intermediarios">Ice cream and popsicles-Med.</a></li>
-            <li><a href="#industriais">Ice cream and popsicle-Indust.</a></li>
-            <li><a href="#gelateria">Italian Gelato Gelateria </a></li>
-            <li><a href="#chocomachine" class="lastLink">Chocolate tempering</a></li>
+                    <p><span style="font-family: Arial; "><span lang="EN-US" style="color: rgb(39, 39, 39); ">In 1954, a poor Italian immigrant, named Domenico, moved to Brazil and started a small ice cream shop in São Paulo.&nbsp; He quickly grew tired&nbsp;of dealing with refrigeration technicians and decided to start fixing his&nbsp;own ice cream machines. As a result, he successfully built&nbsp;a completely remodeled&nbsp;machine from scratch.</span></span>
+                    </p>
+
+                    <p><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#272727"><o:p></o:p></span><span style="font-family: Arial; "><span lang="EN-US" style="color: rgb(49, 49, 49); ">Domenico ran his ice cream parlor for 20 years in Santo André, a sizable suburb to the south of São Paulo.&nbsp; In 1974, however, there was a severe outbreak of meningitis that forced all of the ice cream shops&nbsp;to close. He then began to work&nbsp;as a refrigeration technician and started manufacturing small artisanal ice cream and popsicle machines.&nbsp; On average, Domenico&nbsp;built one or two machines a year,&nbsp;all with wooden frames&nbsp;and using simple resources.</span></span><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#313131"><o:p></o:p></span></p>
+                    <p class="FreeForm">
+                        <span style="font-family: Arial; "><span lang="EN-US" style="color: rgb(49, 49, 49); ">In 1985, Domenico’s son, Marino, an engineer&nbsp;from&nbsp;the aeronautical industry, began searching for a way to vitalize the small industry of ice cream machines.&nbsp; Marino made his first 5 machines inside his small apartment in 1988.&nbsp; A year later, with the help of his father,&nbsp;Marino rented the space next to his father’s shop and officially opened <i>Arpifrio
+                            Industry and
+                            Commerce</i>.</span></span><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#313131"><o:p></o:p></span></p>
+                    <p class="FreeForm">
+                        <span style="font-family: Arial; "><i><span lang="EN-US" style="color: rgb(49, 49, 49); ">Arpifrio Industry and Commerce </span></i><span lang="EN-US" style="color: rgb(49, 49, 49); ">started with one employee and after five years of hard work had grown to 70 employees.&nbsp; Since then, all manufacturing has been outsourced allowing the company to focus on its true passion:&nbsp; <i>Innovative
+                            research projects and the integration of
+                            equipment</i>.</span></span><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#313131"><o:p></o:p></span></p>
+                    <p class="FreeForm">
+                        <span style="font-family: Arial; "><span lang="EN-US" style="color: rgb(49, 49, 49); ">Inspired by the technological advances made within his company, Marino looked for a way to advance the exploration of&nbsp;Computer Aided Design.&nbsp; In 2001, with the support of <i>Fundação
+                            Casimiro Montenegro Filho,</i> he founded&nbsp;the first Computer Graphics Training School in Brazil.&nbsp; All of the school’s teaching materials are prepared by the professors&nbsp;from the Brazilian Aeronautics Institute of Technology (ITA).</span><span lang="EN-US"><a href="http://www.alphachannel.net.br/">
+                            &nbsp;<u>Click here to visit the school’s
+                            website</u>.</a></span></span><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#313131"><o:p></o:p></span></p>
+                    <p class="FreeForm">
+                        <span style="font-family: Arial; "><span lang="EN-US" style="color: rgb(49, 49, 49); ">In 2006, desiring a more international target for its brand and products,&nbsp; the company was renamed <b><i>Finamac
+                            Arpifrio</i></b>.</span></span><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#313131"><o:p></o:p></span></p>
+                    <p class="FreeForm"><span style="font-family: Arial; "><span style="color: rgb(49, 49, 49); ">Due to our numerous innovations in the Ice Cream Machines Industry, we have been honored with many appearances on the cover&nbsp;of&nbsp;"Small Companies - Large Business" magazine, and have been featured on their TV show several times.</span><span style="color: rgb(49, 49, 49); ">&nbsp; </span><span style="color: rgb(49, 49, 49); ">Watch our latest appearance here:</span></span>
+                    </p>
+
+                    <p class="FreeForm"><span style="font-family: Arial; ">&nbsp;</span></p>
+
+                    <div><span style="font-family: Arial; "><br>
+&nbsp;</span></div>
+                    <p style="text-align: center;"><span style="font-family: Arial; "><iframe width="425" height="349" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/fx3yE2i3Rmc"></iframe></span>
+                    </p>
+                    <div><span style="font-family: Arial; "><span lang="EN-US" style="color: rgb(49, 49, 49); ">To see an example of one of the research d</span><span lang="EN-US">evelopment projects achieved by <b>Finamac
+                        / Alpha
+                        Channel</b>,&nbsp;<i><u><a href="http://revistapegn.globo.com/Revista/Common/0,,EIT588-17150,00-E+SIMPLES+RAPIDO+E+LUCRATIVO.html">click
+                        here</a></u></i>.&nbsp; This was a project that used the combined efforts of teachers and students to effectively use digital technology to advertise products. It was carefully studied, tested, and applied by Finamac Arpifrio. The project met with remarkable success - so much so, that it was considered </span><span lang="EN-US" style="color: windowtext; ">a&nbsp;Google Adwords'&nbsp;case.</span></span>
+                    </div>
+                    <p class="FreeForm"><span style="font-family: Arial; "><span lang="EN-US">&nbsp;</span></span></p>
+
+                    <p class="FreeForm">
+                        <span style="font-family: Arial; "><span lang="EN-US">&nbsp;</span></span><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+                    <p class="FreeForm"><span style="font-family: Arial; "><b><span lang="EN-US">Finamac Arpifrio</span></b><span lang="EN-US"> and <b>Alpha
+                        Channel </b>take great care to create and train&nbsp;their ideal team.&nbsp;<i>TV Cultura</i>, a leader in Brazilian Education, published an article about our incredible ‘Education and Work’ Program.<a href="http://www.alphachannel.net.br/paginas/educacaoetrabalho">
+                        <i><u>&nbsp;Click here to see the
+                            article.</u></i></a></span></span><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+                    <p class="FreeForm"><span lang="EN-US" style="font-family:&quot;Times&quot;,&quot;serif&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;">&nbsp;<o:p></o:p></span></p>
+                    <div>
+                        <span style="font-family: Arial; ">&nbsp;Finally,&nbsp;</span><i style="font-family: Times, serif; "><u><a href="http://www.okino.com/mainpic9.htm">check
+                        this link</a></u></i><span style="font-family: Arial; ">, to see what the Canadian Software Company, Okino Computer Graphics, says about the pioneer work we have been doing with our products.</span>
+                    </div>
+                    <p class="FreeForm"><span lang="pt-BR" style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:windowtext;mso-ansi-language:
+#0400;mso-fareast-language:#0400;mso-bidi-language:X-NONE"><o:p></o:p></span></p>
+                    <div>&nbsp;</div>
+                    <div style="text-align: left;">&nbsp;</div>
+                    <p>&nbsp;</p>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    <!--/content-->
+    <script>$(document).ready(function () {
+        headPics = new customFadingSlider('#headPics', {slideSpeed:500, slideTimeout:10000, objectInstance:'headPics', paginationList:'#paginatepics'});
+        produtoHome = new sliderProdutoHome({ objectInstance:'produtoHome' });
+    });</script>
+    <div class="footerContent">
+        <ul class="lista3-col">
+            <li>
+                <h3 class="titlename top5">Specials and Releases </h3>
+
+                <div>
+                    <ol>
+                        <li>
+                            <h4><a href="/en/noticias/2012/04/227/kit-ice-cream-production">Kit Ice-cream
+                                Production!</a>
+                            </h4>
+
+                            <p>The complete kit for your Ice-cream production!</p>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="/en/noticias/2012/04/224/gyrofiller-automatic-equipment-for-ice-cream-filling-and-packing">Gyrofiller
+                                    - Automatic Equipment for ice cream filling and packing</a></h4>
+
+                            <p>GYROFILLER - ROTARY MACHINE TO FILL, PACK AND LABEL ICE CREAM CONTAINERS</p>
+                        </li>
+                        <li>
+                            <h4><a href="/en/noticias/2012/02/137/kit-200-start-your-own-business">Kit 200 - Start your
+                                own business!</a></h4>
+
+                            <p>Complete kit to star your own business!</p>
+                        </li>
+                        <li>
+                            <h4><a href="/en/noticias/2012/01/131/kit-gelato">Kit Gelato</a></h4>
+
+                            <p>Produce delicous italian Gelato with quality and lowest price!</p>
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h3 class="titlename top5">Courses: ice cream and chocolate </h3>
+
+                <div>
+                    <ol>
+                        <li>
+                            <h4><a href="/en/cursos"><strong>05/11</strong>: Ice Cream Market </a></h4>
+                            Aimed at new entrepreneurs who are just starting out...
+                        </li>
+                        <li>
+                            <h4><a href="/en/cursos"><strong>08/11</strong>: Ice Cream - Beginners</a></h4>
+                            Consists of the Theory of Ice Cream, including the...
+                        </li>
+                        <li>
+                            <h4><a href="/en/cursos"><strong>10/11</strong>: Ice Cream Market </a></h4>
+                            Aimed at new entrepreneurs who are just starting out...
+                        </li>
+                        <li>
+                            <h4><a href="/en/cursos"><strong>12/11</strong>: Good Manufacturing Practices</a></h4>
+                            &#160;&#160; Finamac is launching a new product, the...
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li class="ultima">
+                <h3 class="titlename top5">News</h3>
+
+                <div>
+                    <ol>
+                        <li>
+                            <h4><a href="/en/noticias/2012/09/374/what-is-the-best-source-of-fat-for-ice-cream">What Is
+                                The Best Source Of Fat For Ice Cream?</a></h4>
+
+                            <p>There is no doubt that foods with higher levels of fat have higher rates...</p>
+                        </li>
+                        <li>
+                            <h4><a href="/en/noticias/2012/09/372/preventive-maintenance">Preventive Maintenance</a>
+                            </h4>
+
+                            <p>Consider a car engine. From time to time we change the crankcase oil...</p>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="/en/noticias/2012/08/361/solar-powered-ice-cream-cart-is-a-success-in-holland">Solar
+                                    powered ice-cream cart is a success in Holland</a></h4>
+
+                            <p>Did you know that there is an ice cream car that is solar powered?...</p>
+                        </li>
+                        <li>
+                            <h4><a href="/en/noticias/2012/08/362/what-is-pasteurization">What is pasteurization?</a>
+                            </h4>
+
+                            <p>Created by a French scientist, Louis Pasteur, the pasteurization is...</p>
+                        </li>
+                    </ol>
+                </div>
+            </li>
         </ul>
         <br class="c"/>
 
-        <div class="sliderHolder">
-            <div class="contentTab" id="iniciantes" style="display: block;">
-                <a href="http://www.finamac.com.br/en/produtos/iniciante" class="maisDestaqueImg">
-                    <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/produto-turbo-8/turbo-8.jpg') }}" height="278" width="530" alt="Machines for beginners"/>
-                </a>
-
-                <div class="desc"><h3>Machines for beginners</h3>
-
-                    <p>Start with the best equipment</p></div>
-                <a href="http://www.finamac.com.br/en/produtos/iniciante" class="maisDestaque homeLinks">Click here see
-                    more</a> <br class="c"/></div>
-            <div class="contentTab" id="intermediarios" style="display: none;">
-                <a href="http://www.finamac.com.br/en/produtos/intermediario" class="maisDestaqueImg">
-                    <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/produto-turbo25/turbo25.jpg') }}" height="278" width="530" alt="Machines for intermediates"/>
-                </a>
-
-                <div class="desc"><h3>Machines for intermediates</h3>
-
-                    <p>Increase your production with efficiency</p></div>
-                <a href="http://www.finamac.com.br/en/produtos/intermediario" class="maisDestaque homeLinks">Click here
-                    see more</a> <br class="c"/></div>
-            <div class="contentTab" id="industriais" style="display: none;">
-                <a href="http://www.finamac.com.br/en/produtos/industrial" class="maisDestaqueImg">
-                    <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/produto-titan12/titan-12.jpg') }}" height="278" width="530" alt="Machines for industrials"/>
-                </a>
-
-                <div class="desc"><h3>Machines for industrials</h3>
-
-                    <p>High production equipment</p></div>
-                <a href="http://www.finamac.com.br/en/produtos/industrial" class="maisDestaque homeLinks">Click here see
-                    more</a> <br class="c"/></div>
-            <div class="contentTab" id="gelateria" style="display: none;">
-                <a href="http://www.finamac.com.br/en/produtos/gelateria" class="maisDestaqueImg">
-                    <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/produto-suprema/suprema1.jpg') }}" height="278" width="530" alt="Italian gelato"/>
-                </a>
-
-                <div class="desc"><h3>Italian gelato</h3>
-
-                    <p>Machines for hard ice cream</p></div>
-                <a href="http://www.finamac.com.br/en/produtos/gelateria" class="maisDestaque homeLinks">Click here see
-                    more</a> <br class="c"/></div>
-            <div class="contentTab" id="chocomachine" style="display: none;">
-                <a href="http://www.finamac.com.br/en/produtos/chocolate" class="maisDestaqueImg">
-                    <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/produto-chocomachine/chocomachine-painel-2.jpg') }}" height="278" width="530" alt="Chocolate production"/>
-                </a>
-
-                <div class="desc"><h3>Chocolate production</h3>
-
-                    <p>Chocolate tempering machines</p></div>
-                <a href="http://www.finamac.com.br/en/produtos/chocolate" class="maisDestaque homeLinks">Click here see
-                    more</a> <br class="c"/></div>
+        <div id="getBlog">
+            <div id="footerSlider">
+                <ul id="footerPics">
+                    <li class="active">
+                        <a href="http://www.finamac.com.br/en/produtos"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-familia-finamac-en.jpg') }}" width="820" height="349" border="0"/></a>
+                    </li>
+                    <li>
+                        <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-super-c2"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/supercplus-en.jpg') }}" width="820" height="349" border="0"/></a>
+                    </li>
+                    <li>
+                        <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-gyrofiller"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/gyrofiller-banner-botton-en.jpg') }}" width="820" height="349" border="0"/></a>
+                    </li>
+                    <li>
+                        <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-if-900"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-if900-en.jpg') }}" width="820" height="349" border="0"/></a>
+                    </li>
+                    <li>
+                        <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-suprema-br.jpg') }}" width="820" height="349" border="0"/>
+                    </li>
+                    <li>
+                        <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/chocolate-modelagem4.jpg') }}" width="820" height="349" border="0"/>
+                    </li>
+                    <li>
+                        <a href="http://www.finamac.com.br/en/produtos/chocolate/maquina-chocomachine"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-chocomachine-en.jpg') }}" width="820" height="349" border="0"/></a>
+                    </li>
+                    <li>
+                        <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-titan-12"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-titan12-en.jpg') }}" width="820" height="349" border="0"/></a>
+                    </li>
+                    <li>
+                        <a href="http://www.finamac.com.br/en/produtos/iniciante/maquina-sorvete-turbo-8"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-turbo8-en.jpg') }}" width="820" height="349" border="0"/></a>
+                    </li>
+                </ul>
+                <ul id="footerpagination"></ul>
+            </div>
         </div>
     </div>
-</div>
-<!--/content-->
-<script>$(document).ready(function () {
-    headPics = new customFadingSlider('#headPics', {slideSpeed:500, slideTimeout:10000, objectInstance:'headPics', paginationList:'#paginatepics'});
-    produtoHome = new sliderProdutoHome({ objectInstance:'produtoHome' });
-});</script>
-<div class="footerContent">
-    <ul class="lista3-col">
-        <li>
-            <h3 class="titlename top5">Specials and Releases </h3>
 
-            <div>
-                <ol>
-                    <li>
-                        <h4><a href="/en/noticias/2012/04/227/kit-ice-cream-production">Kit Ice-cream Production!</a>
-                        </h4>
+    <script>
+        $(document).ready(function () {
+            // footSlider = new customSlider('#footerPics', '#footerSlider', {slideSpeed: 500, slideTimeout: 5000, objectInstance: 'footSlider', automatic: true});
+            footerPics = new customFadingSlider('#footerPics', {slideSpeed:500, slideTimeout:15000, objectInstance:'footerPics', paginationList:'#footerpagination'});
+        });
+    </script>
 
-                        <p>The complete kit for your Ice-cream production!</p>
-                    </li>
-                    <li>
-                        <h4>
-                            <a href="/en/noticias/2012/04/224/gyrofiller-automatic-equipment-for-ice-cream-filling-and-packing">Gyrofiller
-                                - Automatic Equipment for ice cream filling and packing</a></h4>
-
-                        <p>GYROFILLER - ROTARY MACHINE TO FILL, PACK AND LABEL ICE CREAM CONTAINERS</p>
-                    </li>
-                    <li>
-                        <h4><a href="/en/noticias/2012/02/137/kit-200-start-your-own-business">Kit 200 - Start your own
-                            business!</a></h4>
-
-                        <p>Complete kit to star your own business!</p>
-                    </li>
-                    <li>
-                        <h4><a href="/en/noticias/2012/01/131/kit-gelato">Kit Gelato</a></h4>
-
-                        <p>Produce delicous italian Gelato with quality and lowest price!</p>
-                    </li>
-                </ol>
-            </div>
-        </li>
-        <li>
-            <h3 class="titlename top5">Courses: ice cream and chocolate </h3>
-
-            <div>
-                <ol>
-                    <li>
-                        <h4><a href="/en/cursos"><strong>05/11</strong>: Ice Cream Market </a></h4>
-                        Aimed at new entrepreneurs who are just starting out...
-                    </li>
-                    <li>
-                        <h4><a href="/en/cursos"><strong>08/11</strong>: Ice Cream - Beginners</a></h4>
-                        Consists of the Theory of Ice Cream, including the...
-                    </li>
-                    <li>
-                        <h4><a href="/en/cursos"><strong>10/11</strong>: Ice Cream Market </a></h4>
-                        Aimed at new entrepreneurs who are just starting out...
-                    </li>
-                    <li>
-                        <h4><a href="/en/cursos"><strong>12/11</strong>: Good Manufacturing Practices</a></h4>
-                        &#160;&#160; Finamac is launching a new product, the...
-                    </li>
-                </ol>
-            </div>
-        </li>
-        <li class="ultima">
-            <h3 class="titlename top5">News</h3>
-
-            <div>
-                <ol>
-                    <li>
-                        <h4><a href="/en/noticias/2012/09/374/what-is-the-best-source-of-fat-for-ice-cream">What Is The
-                            Best Source Of Fat For Ice Cream?</a></h4>
-
-                        <p>There is no doubt that foods with higher levels of fat have higher rates...</p>
-                    </li>
-                    <li>
-                        <h4><a href="/en/noticias/2012/09/372/preventive-maintenance">Preventive Maintenance</a>
-                        </h4>
-
-                        <p>Consider a car engine. From time to time we change the crankcase oil...</p>
-                    </li>
-                    <li>
-                        <h4><a href="/en/noticias/2012/08/361/solar-powered-ice-cream-cart-is-a-success-in-holland">Solar
-                            powered ice-cream cart is a success in Holland</a></h4>
-
-                        <p>Did you know that there is an ice cream car that is solar powered?...</p>
-                    </li>
-                    <li>
-                        <h4><a href="/en/noticias/2012/08/362/what-is-pasteurization">What is pasteurization?</a>
-                        </h4>
-
-                        <p>Created by a French scientist, Louis Pasteur, the pasteurization is...</p>
-                    </li>
-                </ol>
-            </div>
-        </li>
-    </ul>
     <br class="c"/>
+    </div>
+    <!--/content-820-->
+    <div id="sidebar"><h3 class="titlename top5 sideAds"><span>Kit 200</span></h3>
+        <a href=""><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banner-lateral-kitpicoleteira-en.jpg') }}" width="160" height="592" alt="Kit 200"/></a>
 
-    <div id="getBlog">
-        <div id="footerSlider">
-            <ul id="footerPics">
-                <li class="active">
-                    <a href="http://www.finamac.com.br/en/produtos"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-familia-finamac-en.jpg') }}" width="820" height="349" border="0"/></a>
-                </li>
-                <li>
-                    <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-super-c2"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/supercplus-en.jpg') }}" width="820" height="349" border="0"/></a>
-                </li>
-                <li>
-                    <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-gyrofiller"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/gyrofiller-banner-botton-en.jpg') }}" width="820" height="349" border="0"/></a>
-                </li>
-                <li>
-                    <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-if-900"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-if900-en.jpg') }}" width="820" height="349" border="0"/></a>
-                </li>
-                <li>
-                    <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-suprema-br.jpg') }}" width="820" height="349" border="0"/>
-                </li>
-                <li>
-                    <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/chocolate-modelagem4.jpg') }}" width="820" height="349" border="0"/>
-                </li>
-                <li>
-                    <a href="http://www.finamac.com.br/en/produtos/chocolate/maquina-chocomachine"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-chocomachine-en.jpg') }}" width="820" height="349" border="0"/></a>
-                </li>
-                <li>
-                    <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-titan-12"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-titan12-en.jpg') }}" width="820" height="349" border="0"/></a>
-                </li>
-                <li>
-                    <a href="http://www.finamac.com.br/en/produtos/iniciante/maquina-sorvete-turbo-8"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-turbo8-en.jpg') }}" width="820" height="349" border="0"/></a>
-                </li>
+        <div class="boxParceiro" style="margin-top: 17px;">
+            <h3 class="titlename top5 sideAds">CMax Aerated Ice Cream</h3>
+            <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-c-max"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/cmax.jpg') }}" width="160" height="145" alt="CMax Aerated Ice Cream"/></a>
+        </div>
+        <div class="boxParceiro" style="margin-top: 15px; margin-bottom: 1px;">
+            <h3 class="titlename top5 sideAds">Turbo 25 Popsicle Machine</h3>
+            <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-turbo-25"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/turbo-25.jpg') }}" width="160" height="145" alt="Turbo 25 Popsicle Machine"/></a>
+        </div>
+        <div class="boxParceiro" style="margin-top: 15px; margin-bottom: 1px;">
+            <h3 class="titlename top5 sideAds">Turbo 100 Popsicle Machine</h3>
+            <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-turbo-100"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/turbo-100.jpg') }}" width="160" height="145" alt="Turbo 100 Popsicle Machine"/></a>
+        </div>
+    </div>
+    <br class="c"/>
+    </div>
+    <div id="footer">
+        <div class="wrapper">
+            <ul id="sociais">
+                <li class="yt"><a href="http://vimeo.com/3019875?ab" target="_blank">Vimeo</a></li>
+                <li class="rss"><a href="/en/rss">Feeds</a></li>
+                <li class="tw"><a href="http://twitter.com/FinamacArpifrio" target="_blank">Twitter</a></li>
+                <li class="fb"><a href="http://www.facebook.com/FinamacArpifrio" target="_blank">Facebook</a></li>
+                <li class="you"><a href="http://www.youtube.com/user/Finamac" target="_blank">Youtube</a></li>
+                <!--
+                  <li class="okt"><a href="http://www.orkut.com" target="_blank">Orkut</a></li>
+                  <li class="in"><a href="http://www.linkedin.com/profile/edit?trk=hb_tab_pro_top" target="_blank">linked-in</a></li>
+                  -->
             </ul>
-            <ul id="footerpagination"></ul>
+            <br class="c"/>
+
+            <div class="links">
+                <h3><a href="/en/sobre">Company</a></h3>
+                <ol>
+                    <li><a href="/en/sobre/historia">History</a></li>
+                    <li><a href="/en/sobre/missao">Mission</a></li>
+                    <li><a href="/en/sobre/tecnologia">Technology</a></li>
+                    <li><a href="/en/sobre/como-chegar">Location</a></li>
+                    <li><a href="/en/sobre/parceiros">Partners</a></li>
+                </ol>
+                <h3><a href="/en/videos">Videos</a></h3>
+            </div>
+            <div class="links">
+                <h3><a href="/en/produtos">Products</a></h3>
+                <ol>
+                    <li><a href="/en/produtos/iniciante">Beginners</a></li>
+                    <li><a href="/en/produtos/intermediario">Intermediates</a></li>
+                    <li><a href="/en/produtos/industrial">Industrial</a></li>
+                    <li><a href="/en/produtos/gelateria">Gelateria</a></li>
+                    <li><a href="/en/produtos/chocolate">Chocolate</a></li>
+                    <li><a href="http://www.finamac.com.br/catalogo/" target="_blank">Catalog</a></li>
+                </ol>
+                <h3><a href="/en/noticias">News</a></h3>
+            </div>
+            <div class="links">
+                <h3><a href="/en/assistencia">Technical Support</a></h3>
+                <ol>
+                    <li><a href="/en/assistencia/localiza">Find a technician</a></li>
+                    <li><a href="/en/assistencia/contato">Technical consult</a></li>
+                    <li><a href="/en/assistencia/treinamento">Train your technician</a></li>
+                    <li><a href="/en/assistencia/credenciamento">Accreditation</a></li>
+                </ol>
+                <h3><a href="/en/cursos">Courses</a></h3>
+            </div>
+            <div class="links">
+                <h3><a href="/en/faq">Frequent Asked Questions</a></h3>
+                <ol>
+                    <li><a href="/en/faq/duvidas-gerais">General Doubts</a></li>
+                    <li><a href="/en/faq/como-comprar">Ordering</a></li>
+                    <li><a href="/en/faq/pos-venda">After Sales</a></li>
+                </ol>
+            </div>
+            <div class="links">
+                <h3><a href="/en/atendimento">Contact</a></h3>
+                <ol>
+                    <li><a href="/en/atendimento/consulta-produtos">Consult our products</a></li>
+                    <li><a href="/en/atendimento/contato">Suggestions or complaints</a></li>
+                    <li><a href="/en/atendimento/trabalhe-conosco">Work with us</a></li>
+                </ol>
+            </div>
+            <div class="links">
+                <h3><a href="/en/pesquisa-desenvolvimento">Research and Development</a></h3>
+                <ol>
+                    <li><a href="/en/pesquisa-desenvolvimento/objetivos">Objectives</a></li>
+                    <li><a href="/en/pesquisa-desenvolvimento/areas">Areas</a></li>
+                    <li><a href="/en/pesquisa-desenvolvimento/parcerias">Partnerships</a></li>
+                    <li><a href="/en/pesquisa-desenvolvimento/projetos">Projects</a></li>
+                </ol>
+            </div>
+            <br class="c"/>
+
+            <div class="copyNotice">&copy; 2012 Av. Áurea, 514 - Santo André - SP - Brasil | BR: +55 11 2135-6500</div>
+            <br class="c"/>
         </div>
     </div>
-</div>
-
-<script>
-    $(document).ready(function () {
-        // footSlider = new customSlider('#footerPics', '#footerSlider', {slideSpeed: 500, slideTimeout: 5000, objectInstance: 'footSlider', automatic: true});
-        footerPics = new customFadingSlider('#footerPics', {slideSpeed:500, slideTimeout:15000, objectInstance:'footerPics', paginationList:'#footerpagination'});
-    });
-</script>
-
-<br class="c"/>
-</div>
-<!--/content-820-->
-<div id="sidebar"><h3 class="titlename top5 sideAds"><span>Kit 200</span></h3>
-    <a href=""><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banner-lateral-kitpicoleteira-en.jpg') }}" width="160" height="592" alt="Kit 200"/></a>
-
-    <div class="boxParceiro" style="margin-top: 17px;">
-        <h3 class="titlename top5 sideAds">CMax Aerated Ice Cream</h3>
-        <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-c-max"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/cmax.jpg') }}" width="160" height="145" alt="CMax Aerated Ice Cream"/></a>
-    </div>
-    <div class="boxParceiro" style="margin-top: 15px; margin-bottom: 1px;">
-        <h3 class="titlename top5 sideAds">Turbo 25 Popsicle Machine</h3>
-        <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-turbo-25"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/turbo-25.jpg') }}" width="160" height="145" alt="Turbo 25 Popsicle Machine"/></a>
-    </div>
-    <div class="boxParceiro" style="margin-top: 15px; margin-bottom: 1px;">
-        <h3 class="titlename top5 sideAds">Turbo 100 Popsicle Machine</h3>
-        <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-turbo-100"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/turbo-100.jpg') }}" width="160" height="145" alt="Turbo 100 Popsicle Machine"/></a>
-    </div>
-</div>
-<br class="c"/>
-</div>
-<div id="footer">
-    <div class="wrapper">
-        <ul id="sociais">
-            <li class="yt"><a href="http://vimeo.com/3019875?ab" target="_blank">Vimeo</a></li>
-            <li class="rss"><a href="/en/rss">Feeds</a></li>
-            <li class="tw"><a href="http://twitter.com/FinamacArpifrio" target="_blank">Twitter</a></li>
-            <li class="fb"><a href="http://www.facebook.com/FinamacArpifrio" target="_blank">Facebook</a></li>
-            <li class="you"><a href="http://www.youtube.com/user/Finamac" target="_blank">Youtube</a></li>
-            <!--
-              <li class="okt"><a href="http://www.orkut.com" target="_blank">Orkut</a></li>
-              <li class="in"><a href="http://www.linkedin.com/profile/edit?trk=hb_tab_pro_top" target="_blank">linked-in</a></li>
-              -->
-        </ul>
-        <br class="c"/>
-
-        <div class="links">
-            <h3><a href="/en/sobre">Company</a></h3>
-            <ol>
-                <li><a href="/en/sobre/historia">History</a></li>
-                <li><a href="/en/sobre/missao">Mission</a></li>
-                <li><a href="/en/sobre/tecnologia">Technology</a></li>
-                <li><a href="/en/sobre/como-chegar">Location</a></li>
-                <li><a href="/en/sobre/parceiros">Partners</a></li>
-            </ol>
-            <h3><a href="/en/videos">Videos</a></h3>
-        </div>
-        <div class="links">
-            <h3><a href="/en/produtos">Products</a></h3>
-            <ol>
-                <li><a href="/en/produtos/iniciante">Beginners</a></li>
-                <li><a href="/en/produtos/intermediario">Intermediates</a></li>
-                <li><a href="/en/produtos/industrial">Industrial</a></li>
-                <li><a href="/en/produtos/gelateria">Gelateria</a></li>
-                <li><a href="/en/produtos/chocolate">Chocolate</a></li>
-                <li><a href="http://www.finamac.com.br/catalogo/" target="_blank">Catalog</a></li>
-            </ol>
-            <h3><a href="/en/noticias">News</a></h3>
-        </div>
-        <div class="links">
-            <h3><a href="/en/assistencia">Technical Support</a></h3>
-            <ol>
-                <li><a href="/en/assistencia/localiza">Find a technician</a></li>
-                <li><a href="/en/assistencia/contato">Technical consult</a></li>
-                <li><a href="/en/assistencia/treinamento">Train your technician</a></li>
-                <li><a href="/en/assistencia/credenciamento">Accreditation</a></li>
-            </ol>
-            <h3><a href="/en/cursos">Courses</a></h3>
-        </div>
-        <div class="links">
-            <h3><a href="/en/faq">Frequent Asked Questions</a></h3>
-            <ol>
-                <li><a href="/en/faq/duvidas-gerais">General Doubts</a></li>
-                <li><a href="/en/faq/como-comprar">Ordering</a></li>
-                <li><a href="/en/faq/pos-venda">After Sales</a></li>
-            </ol>
-        </div>
-        <div class="links">
-            <h3><a href="/en/atendimento">Contact</a></h3>
-            <ol>
-                <li><a href="/en/atendimento/consulta-produtos">Consult our products</a></li>
-                <li><a href="/en/atendimento/contato">Suggestions or complaints</a></li>
-                <li><a href="/en/atendimento/trabalhe-conosco">Work with us</a></li>
-            </ol>
-        </div>
-        <div class="links">
-            <h3><a href="/en/pesquisa-desenvolvimento">Research and Development</a></h3>
-            <ol>
-                <li><a href="/en/pesquisa-desenvolvimento/objetivos">Objectives</a></li>
-                <li><a href="/en/pesquisa-desenvolvimento/areas">Areas</a></li>
-                <li><a href="/en/pesquisa-desenvolvimento/parcerias">Partnerships</a></li>
-                <li><a href="/en/pesquisa-desenvolvimento/projetos">Projects</a></li>
-            </ol>
-        </div>
-        <br class="c"/>
-
-        <div class="copyNotice">&copy; 2012 Av. Áurea, 514 - Santo André - SP - Brasil | BR: +55 11 2135-6500</div>
-        <br class="c"/>
-    </div>
-</div>
 {% endblock %}
 </body>
 </html>

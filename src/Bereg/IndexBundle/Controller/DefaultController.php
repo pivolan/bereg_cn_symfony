@@ -24,10 +24,19 @@ class DefaultController extends ControllerBase
      * @Route("/")
      * @Template()
      *
-     * @param Request $request
+     * @internal param \Symfony\Component\HttpFoundation\Request $request
      * @return array
      */
     public function indexAction()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/proizvodstvennye-linii-iz-kitaya")
+     * @Template()
+     */
+    public function productionLinesAction()
     {
         return array();
     }
