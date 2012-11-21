@@ -69,6 +69,15 @@ class DefaultController extends ControllerBase
     }
 
     /**
+     * @Route("/kompaniya-bereg-import-tovarov-i-oborudovaniya-iz-kitaya")
+     * @Template()
+     */
+    public function aboutUsAction()
+    {
+        return array();
+    }
+
+    /**
      * @Route("/perevod-s-kitaiskogo-i-na-kitaiskii")
      * @Template()
      */
