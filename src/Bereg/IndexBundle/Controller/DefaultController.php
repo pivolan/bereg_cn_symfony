@@ -42,6 +42,34 @@ class DefaultController extends ControllerBase
     }
 
     /**
+     * @Route("/mini-zavody-iz-kitaya")
+     * @Template()
+     */
+    public function miniZavodyAction()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/oborudovanie-iz-kitaya")
+     * @Template()
+     */
+    public function oborudovanieAction()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/poisk-proizvoditelei-i-tovarov-v-kitae")
+     * @Template()
+     */
+    public function poiskAction()
+    {
+        return array();
+    }
+
+
+    /**
      * Показывает страницу оборудования
      * @Route("/{slug}/{productId}")
      * @Template()
