@@ -60,6 +60,15 @@ class DefaultController extends ControllerBase
     }
 
     /**
+     * @Route("/uslugi-kompanii-bereg")
+     * @Template()
+     */
+    public function uslugiAction()
+    {
+        return array();
+    }
+
+    /**
      * @Route("/poisk-proizvoditelei-i-tovarov-v-kitae")
      * @Template()
      */
