@@ -113,6 +113,15 @@ class DefaultController extends ControllerBase
         return array();
     }
 
+    /**
+     * @Route("/etapy-postavki-tovarov-i-oborudovaniya")
+     * @Template()
+     */
+    public function kakRabotaemAction()
+    {
+        return array();
+    }
+
 
     /**
      * Показывает страницу оборудования
