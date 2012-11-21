@@ -13,7 +13,7 @@ body { font-family: Arial, 'Helvetica'; font-size:12px; color:#404040  }
 li#en { border-right:1px solid #787676;}
 #lang li { display:block; float:right;}
 #lang a { text-transform:uppercase; color:#787676; text-decoration:none; font-size:11px; padding:1px 5px 1px 5px;  }
-#header h1 a { display:block; background: url(/bundles/beregindex/images/i/logo.gif); width:213px; height:35px; float:left; text-indent:-9999px; margin:10px 0px 0px 0px;}
+#header h1 a { display:block; background: url(/bundles/beregindex/images/i/logo.png); width:195px; height:66px; float:left; text-indent:-9999px; margin:-13px 0px 0px 0px;}
 #header #login { display:block; padding:6px 5px 0px 5px; float:left; font-size:14px; color:#787676; text-decoration:none}
 #header  .r { width:250px; margin-bottom:15px;}
 #header h3 { display:block; float:left; margin:30px 0px 0px 100px; text-transform:uppercase; color:#787676;}
@@ -29,7 +29,7 @@ li#en { border-right:1px solid #787676;}
 #nav li a {margin:0 0 0 2px; display:block; padding:19px 8px 16px 8px; float:left; background:url(/bundles/beregindex/images/i/separa.gif) right bottom no-repeat; font-size:10px; color:#f6f6f6; font-weight:bold; text-transform:uppercase; text-decoration:none;}
 #nav li.zero a { margin-right:0px !important; background:none!important;}
 #nav .current a, #nav a:hover { color:#f67027 }
-#nav li ul { display: none; position: absolute; top: 47px; left: -8px; width:145px;  background: #4b4b4b;  -webkit-border-bottom-left-radius: 4px;  -webkit-border-bottom-right-radius: 4px;  -moz-border-radius-bottomleft: 4px; -moz-border-radius-bottomright: 4px;  border-bottom-left-radius: 4px;  border-bottom-right-radius: 4px;  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.15);  -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.15);  box-shadow: 0 3px 3px rgba(0,0,0,0.15); padding-bottom:30px;  }
+#nav li ul { display: none; position: absolute; top: 47px; left: -8px; width:205px;  background: #4b4b4b;  -webkit-border-bottom-left-radius: 4px;  -webkit-border-bottom-right-radius: 4px;  -moz-border-radius-bottomleft: 4px; -moz-border-radius-bottomright: 4px;  border-bottom-left-radius: 4px;  border-bottom-right-radius: 4px;  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.15);  -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.15);  box-shadow: 0 3px 3px rgba(0,0,0,0.15); padding-bottom:30px;  }
 #nav li:hover ul { display: block;  }
 #nav li ul li { float: none;}
 #nav li ul li a {  padding: 8px 8px 8px 8px;  background: #000;  display: block; float:none!important}
@@ -229,7 +229,7 @@ a.fave { display:block; background: url(/bundles/beregindex/images/i/more.png) n
 .stylefomrs  textarea { width:600px !important; height:150px;  border:1px solid #a4a4a4; padding:3px; width:180px; margin-bottom:10px; }
 /*.stylefomrs .botoes { background:#6d6d6d url(/bundles/beregindex/images/i/barraenvia.gif) no-repeat center; padding:9px;}*/
 .stylefomrs .botoes { background: #6D6D6D; padding: 10px 50px 10px 310px;}
-.stylefomrs .buttom { background:transparent;  color:#fff; font-weight:bold; text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; text-align:center; width:90px; margin: 0 auto}
+.stylefomrs .buttom { background:transparent;  color:#fff; font-weight:bold; text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; text-align:center; width:90px; margin: 0 auto; cursor: pointer;}
 .stylefomrs  .reset { margin-left:255px;}
 
 

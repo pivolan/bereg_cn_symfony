@@ -104,6 +104,15 @@ class DefaultController extends ControllerBase
         return array();
     }
 
+    /**
+     * @Route("/articles")
+     * @Template()
+     */
+    public function articlesAction()
+    {
+        return array();
+    }
+
 
     /**
      * Показывает страницу оборудования

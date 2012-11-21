@@ -24,5 +24,217 @@
     <h2>Форма обратной связи</h2>
     <p>Для получения более подробной информации, заполните, пожалуйста, форму и менеджер нашей компании свяжется с Вами
         в ближайшее время.</p>
+    <form enctype="multipart/form-data" class="subscriptionForm stylefomrs" target="engine" id="frmAtendimento" name="form1" method="post" action="">
+        <input type="hidden" value="en" id="lang" name="lang">
 
+        <div class="label_template"><label for="nome"><span style="color:red">*</span> Complete
+            name</label><input type="text" style="width: 330px" class="required" maxlength="200" size="80" id="nome" name="nome">
+        </div>
+        <div class="label_template"><label for="empresa">Company's
+            name</label><input type="text" style="width: 330px" maxlength="200" size="80" id="empresa" name="empresa">
+        </div>
+        <br class="c">
+
+        <div class="label_template">
+            <label for="endereco">Address</label><input type="text" style="width: 520px" maxlength="250" size="80" id="endereco" name="endereco">
+        </div>
+        <div class="label_template">
+            <label for="numero">Number</label><input type="text" style="width: 140px" maxlength="15" size="10" id="numero" name="numero">
+        </div>
+        <br class="c">
+
+        <div class="label_template">
+            <label for="complemento">Complement</label><input type="text" style="width: 329px" maxlength="40" size="20" id="complemento" name="complemento">
+        </div>
+        <div class="label_template">
+            <label for="bairro">District</label><input type="text" style="width: 329px" maxlength="250" size="80" id="bairro" name="bairro">
+        </div>
+        <br class="c">
+
+        <div class="label_template"><label for="cep">ZIP
+            Code</label><input type="text" style="width: 80px" maxlength="15" size="10" id="cep" name="cep"></div>
+        <div class="label_template">
+            <label for="referencia">County</label><input type="text" style="width: 578px" maxlength="15" size="10" id="referencia" name="referencia">
+        </div>
+        <br class="c">
+
+        <div class="label_template"><label for="cidade"><span style="color:red">*</span>
+            City</label><input type="text" style="width: 329px" class="required" maxlength="40" size="20" id="cidade" name="cidade">
+        </div>
+        <div class="label_template"><label for="estado"><span style="color:red">*</span>
+            State</label><input type="text" style="width: 329px" class="required" maxlength="40" size="20" id="estado" name="estado">
+        </div>
+        <br class="c">
+
+        <div class="label_template">
+            <label for="regiao">Region</label><input type="text" style="width: 329px" maxlength="40" size="20" id="regiao" name="regiao">
+        </div>
+        <div class="label_template"><label for="pais"><span style="color:red">*</span>
+            Country</label><input type="text" style="width: 329px" maxlength="40" size="20" id="pais" name="pais"></div>
+        <br class="c">
+
+        <div class="label_template"><label for="dddi">Country
+            Code</label><input type="text" style="width: 154px" maxlength="40" size="20" id="dddi" name="dddi"></div>
+        <div class="label_template"><label for="ddd1"><span style="color:red">*</span> City
+            code</label><input type="text" style="width: 154px" class="required" maxlength="40" size="20" id="ddd1" name="ddd1">
+        </div>
+        <div class="label_template"><label for="fone1"><span style="color:red">*</span> Telephone
+            number</label><input type="text" style="width: 170px" class="required" maxlength="40" size="20" id="fone1" name="fone1">
+        </div>
+        <br class="c">
+
+        <div class="label_template"><label for="email1"><span style="color:red">*</span>
+            E-mail</label><input type="text" style="width: 329px" class="required email" maxlength="40" size="20" id="email1" name="email1">
+        </div>
+        <br class="c">
+
+        <div class="label_template"><label for="midia"><span style="color:red">*</span> How have you known this company?</label><select style="width:339px" class="required" size="1" id="midia" name="midia">
+            <option selected="selected" value=""></option>
+            <option selected="selected" value="Course / SENAI">Course / SENAI</option>
+            <option selected="selected" value="Course / Other">Course / Other</option>
+            <option selected="selected" value="Internet / Alibaba">Internet / Alibaba</option>
+            <option selected="selected" value="Internet / ExportersIndia">Internet / ExportersIndia</option>
+            <option selected="selected" value="Internet / Facebook">Internet / Facebook</option>
+            <option selected="selected" value="Internet / Google">Internet / Google</option>
+            <option selected="selected" value="Internet / Infocomercial">Internet / Infocomercial</option>
+            <option selected="selected" value="Internet / Mundo Helado">Internet / Mundo Helado</option>
+            <option selected="selected" value="Internet / Yahoo">Internet / Yahoo</option>
+            <option selected="selected" value="Internet / Other">Internet / Other</option>
+            <option selected="selected" value="Magazine / Mercado Sorveteiro">Magazine / Mercado Sorveteiro</option>
+            <option selected="selected" value="Magazine / Sorvetes e Casquinhas">Magazine / Sorvetes e Casquinhas
+            </option>
+            <option selected="selected" value="Magazine / Sorveteria Brasileira">Magazine / Sorveteria Brasileira
+            </option>
+            <option selected="selected" value="Magazine / Other">Magazine / Other</option>
+            <option selected="selected" value="Trade Fair / Febrachoco (Gramado/RS-Brasil)">Trade Fair / Febrachoco
+                (Gramado/RS-Brasil)
+            </option>
+            <option selected="selected" value="Trade Fair / Fipan (SP-Brasil)">Trade Fair / Fipan (SP-Brasil)</option>
+            <option selected="selected" value="Trade Fair / Fispal Nordeste (Brasil)">Trade Fair / Fispal Nordeste
+                (Brasil)
+            </option>
+            <option selected="selected" value="Trade Fair / Fispal SP (Brasil)">Trade Fair / Fispal SP (Brasil)</option>
+            <option selected="selected" value="Trade Fair / NRA (Chicago-EUA)">Trade Fair / NRA (Chicago-EUA)</option>
+            <option selected="selected" value="Trade Fair / Tecnosorvetes (SP-Brasil)">Trade Fair / Tecnosorvetes
+                (SP-Brasil)
+            </option>
+            <option selected="selected" value="Trade Fair / SIGEP (Rimini-Itália)">Trade Fair / SIGEP (Rimini-Itália)
+            </option>
+            <option selected="selected" value="Trade Fair / Other">Trade Fair / Other</option>
+            <option selected="selected" value="Event / Palestra SEBRAE">Event / Palestra SEBRAE</option>
+            <option selected="selected" value="Event / Other">Event / Other</option>
+            <option selected="selected" value="Other / E-mail Marketing">Other / E-mail Marketing</option>
+            <option selected="selected" value="Other / Product Exhibition">Other / Product Exhibition</option>
+            <option selected="selected" value="Other / Indication">Other / Indication</option>
+            <option selected="selected" value="Representatives">Representatives</option>
+        </select></div>
+        <br class="c">
+
+        <div class="label_template"><label for="maquinas_interesse">Machines of
+            interest</label><input type="text" style="width: 330px" maxlength="200" size="80" id="maquinas_interesse" name="maquinas_interesse">
+        </div>
+        <br class="c">
+
+        <div class="label_template"><label for="mensagem">Enter your doubt or
+            comments </label><textarea style="width: 680px !important; resize: none;" cols="5" rows="20" id="mensagem" name="mensagem"></textarea>
+        </div>
+        <input type="hidden" value="produtos" id="tipo_contato" name="tipo_contato"><br class="c"><span style="color:red; margin:0 0 0 10px">*</span>
+        Kind(s) of product(s) and quantity you want to produce:<br class="c">
+
+        <div class="img_a">
+            <div class="label_form"><label for="check_sorvete">Ice
+                Cream</label><input type="checkbox" class="ckoption" id="check_sorvete" name="check_sorvete"></div>
+            <div class="medidas">
+                <div class="label_template"><label for="sorvete_espec_litros">liters/hour
+                    or</label><input type="text" style="width: 97px" maxlength="200" size="80" id="sorvete_espec_litros" name="sorvete_espec_litros">
+                </div>
+                <div class="label_template">
+                    <label for="sorvete_espec_quilos">kilos/hour</label><input type="text" style="width: 97px" maxlength="200" size="80" id="sorvete_espec_quilos" name="sorvete_espec_quilos">
+                </div>
+            </div>
+        </div>
+        <br class="c">
+
+        <div class="img_b">
+            <div class="label_form">
+                <label for="check_picole">popsicle</label><input type="checkbox" class="ckoption" id="check_picole" name="check_picole">
+            </div>
+            <div class="medidas">
+                <div class="label_template">
+                    <label for="picoles_espec_unidades">units/hour</label><input type="text" style="width: 97px" maxlength="200" size="80" id="picoles_espec_unidades" name="picoles_espec_unidades">
+                </div>
+            </div>
+        </div>
+        <br class="c">
+
+        <div class="img_c">
+            <div class="label_form">
+                <label for="check_gelato">Gelato</label><input type="checkbox" class="ckoption" id="check_gelato" name="check_gelato">
+            </div>
+            <div class="medidas ">
+                <div class="label_template"><label for="gelato_espec_litros">liters/hour
+                    or</label><input type="text" style="width: 97px" maxlength="200" size="80" id="gelato_espec_litros" name="gelato_espec_litros">
+                </div>
+                <div class="label_template">
+                    <label for="gelato_espec_quilos">kilos/hour</label><input type="text" style="width: 97px" maxlength="200" size="80" id="gelato_espec_quilos" name="gelato_espec_quilos">
+                </div>
+            </div>
+        </div>
+        <br class="c">
+
+        <div class="img_d">
+            <div class="label_form">
+                <label for="check_chocolate">Chocolate</label><input type="checkbox" class="ckoption" id="check_chocolate" name="check_chocolate">
+            </div>
+            <div class="medidas ">
+                <div class="label_template">
+                    <label for="chocolate_espec_quilos">kilos/hour</label><input type="text" style="width: 97px" maxlength="200" size="80" id="chocolate_espec_quilos" name="chocolate_espec_quilos">
+                </div>
+                (bonbons, truffles, candies, blend, etc)
+            </div>
+        </div>
+        <br class="c">
+
+        <div class="img_e">
+            <div class="label_form">
+                <label for="outros_espec_check">Others</label><input type="checkbox" class="ckoption" id="outros_espec_check" name="outros_espec_check">
+            </div>
+            <div class="medidas ">
+                <div class="label_template"><label for="outros_espec_text">others, please
+                    specify</label><input type="text" style="width: 200px" maxlength="200" size="80" id="outros_espec_text" name="outros_espec_text">
+                </div>
+                <div class="label_template"><label for="outros_espec_litros">liters/hour
+                    or</label><input type="text" style="width: 97px" maxlength="200" size="80" id="outros_espec_litros" name="outros_espec_litros">
+                </div>
+                <div class="label_template"><label for="outros_espec_quilos">kilos/hour
+                    or</label><input type="text" style="width: 97px" maxlength="200" size="80" id="outros_espec_quilos" name="outros_espec_quilos">
+                </div>
+                <div class="label_template">
+                    <label for="outros_espec_unidades">units/hour</label><input type="text" style="width: 97px" maxlength="200" size="80" id="outros_espec_unidades" name="outros_espec_unidades">
+                </div>
+            </div>
+        </div>
+        <div class="label_template"><label for="ramo_atividade"><span style="color:red">*</span> My activity branch is:</label><select style="width:339px" class="required" size="1" id="ramo_atividade" name="ramo_atividade">
+            <option selected="selected" value="chocolate shop">chocolate shop</option>
+            <option selected="selected" value="pub / snack bar">pub / snack bar</option>
+            <option selected="selected" value="retail sales">retail sales</option>
+            <option selected="selected" value="distributor">distributor</option>
+            <option selected="selected" value="ice cream factory">ice cream factory</option>
+            <option selected="selected" value="informal">informal</option>
+            <option selected="selected" value="beginner">beginner</option>
+            <option selected="selected" value="bakery / confectionery">bakery / confectionery</option>
+            <option selected="selected" value="pizzeria">pizzeria</option>
+            <option selected="selected" value="restaurant">restaurant</option>
+            <option selected="selected" value="others">others</option>
+            <option selected="selected"></option>
+        </select></div>
+        <div class="label_template"><label for="outros_espec_ramo">others, please
+            specify:</label><input type="text" style="width:329px" size="1" id="outros_espec_ramo" name="outros_espec_ramo">
+        </div>
+        <br class="c"><input type="hidden" value="1062187433" id="gconID" name="gconID"><input type="hidden" value="en" id="gconLang" name="gconLang"><input type="hidden" value="cpHjCPvO-AEQqeO--gM" id="gconLabel" name="gconLabel"><br class="c"><br class="c">
+
+        <div class="botoes">
+            <button class="envia buttom" id="btnEnvia" name="btnEnvia" type="submit">Send</button>
+        </div>
+    </form>
 {% endblock %}
