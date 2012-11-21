@@ -68,6 +68,15 @@ class DefaultController extends ControllerBase
         return array();
     }
 
+    /**
+     * @Route("/perevod-s-kitaiskogo-i-na-kitaiskii")
+     * @Template()
+     */
+    public function perevodAction()
+    {
+        return array();
+    }
+
 
     /**
      * Показывает страницу оборудования
