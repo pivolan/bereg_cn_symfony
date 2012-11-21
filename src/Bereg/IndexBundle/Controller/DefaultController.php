@@ -87,6 +87,15 @@ class DefaultController extends ControllerBase
     }
 
     /**
+     * @Route("/kontakty-kompanii-bereg")
+     * @Template()
+     */
+    public function contactsAction()
+    {
+        return array();
+    }
+
+    /**
      * @Route("/perevod-s-kitaiskogo-i-na-kitaiskii")
      * @Template()
      */
