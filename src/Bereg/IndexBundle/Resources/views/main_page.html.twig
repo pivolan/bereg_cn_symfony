@@ -27,215 +27,221 @@
 <body>
 {% block body %}
     <div id="wrapper">
-    <div id="header">
-        <div id="logo"><a href="/en">Finamac</a></div>
+    {% block head %}
+        <div id="header">
+            <div id="logo"><a href="/en">Finamac</a></div>
 
-        <div class="r">
-            <ol id="lang">
-                <li><a href="/es/">Español</a></li>
-                <li id="en"><a class="current" href="/en/">English</a></li>
-                <li id="en"><a href="/br/">Português</a></li>
-            </ol>
-            <form id="searchform" action="/en/busca" method="get">
-                <input name="palavra" type="text" value=""/> <input type="submit" value=" "/>
-            </form>
-        </div>
-        <h3>Online chat ::
-            <!-- http://www.LiveZilla.net Chat Button Link Code --><a href="javascript:void(window.open('http://www.finamac.com.br/atendimento/livezilla.php?intgroup=YXRlbmRpbWVudG9FTg==&amp;hg=P0F0ZW5kaW1lbnRv&amp;reset=true','','width=590,height=890,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=no'))"><img width="54" height="10" border="0" alt="LiveZilla Live Help" src="http://www.finamac.com.br/atendimento/image.php?id=06&amp;hg=P0F0ZW5kaW1lbnRv"></a>
-            <noscript>&lt;div&gt;&lt;a
-                href="http://www.finamac.com.br/atendimento/livezilla.php?intgroup=YXRlbmRpbWVudG9FTg==&amp;amp;hg=P0F0ZW5kaW1lbnRv&amp;amp;reset=true"
-                target="_blank"&gt;Start Live Help Chat&lt;/a&gt;&lt;/div&gt;</noscript>
-            <!-- http://www.LiveZilla.net Chat Button Link Code --><!-- http://www.LiveZilla.net Tracking Code -->
-            <div style="display:none" id="livezilla_tracking"></div>
-            <script type="text/javascript">&lt;!--DON
-            'T REMOVE ANY LINE BREAKS OR TAGS --&gt;/* &lt;![CDATA[ */var script = document.createElement("script");script.type="text/javascript";var src = "http://www.finamac.com.br/atendimento/server.php?request=track&amp;output=jcrpt&amp;nse="+Math.random();setTimeout("script.src=src;document.getElementById('
-            livezilla_tracking
-            ').appendChild(script)",1);/* ]]&gt; */</script>
-            <!-- http://www.LiveZilla.net Tracking Code --> </h3>
-        <br class="c"/>
-
-        {% include 'BeregIndexBundle:_Include:navigation.html.twig' %}
-    </div>
-    <!--/header-->
-    {% include 'BeregIndexBundle:_Include:rotate.html.twig' %}
-    <div id="content-820p"><h1 class="titlename top5">{% block title_text %} Main page {% endblock %}</h1>
-
-        <div class="content">
-            <div id="artigo">
-                <div class="post">
-
-                    {% block body_text %}
-                    {% endblock %}
-                </div>
+            <div class="r">
+                <ol id="lang">
+                    <li><a href="/es/">Español</a></li>
+                    <li id="en"><a class="current" href="/en/">English</a></li>
+                    <li id="en"><a href="/br/">Português</a></li>
+                </ol>
+                <form id="searchform" action="/en/busca" method="get">
+                    <input name="palavra" type="text" value=""/> <input type="submit" value=" "/>
+                </form>
             </div>
-        </div>
-        <!--/content-->
-        <script>$(document).ready(function () {
-            headPics = new customFadingSlider('#headPics', {slideSpeed:500, slideTimeout:10000, objectInstance:'headPics', paginationList:'#paginatepics'});
-            produtoHome = new sliderProdutoHome({ objectInstance:'produtoHome' });
-        });</script>
-        <div class="footerContent">
-            <ul class="lista3-col">
-                <li>
-                    <h3 class="titlename top5">Specials and Releases </h3>
-
-                    <div>
-                        <ol>
-                            <li>
-                                <h4><a href="/en/noticias/2012/04/227/kit-ice-cream-production">Kit Ice-cream
-                                    Production!</a>
-                                </h4>
-
-                                <p>The complete kit for your Ice-cream production!</p>
-                            </li>
-                            <li>
-                                <h4>
-                                    <a href="/en/noticias/2012/04/224/gyrofiller-automatic-equipment-for-ice-cream-filling-and-packing">Gyrofiller
-                                        - Automatic Equipment for ice cream filling and packing</a></h4>
-
-                                <p>GYROFILLER - ROTARY MACHINE TO FILL, PACK AND LABEL ICE CREAM CONTAINERS</p>
-                            </li>
-                            <li>
-                                <h4><a href="/en/noticias/2012/02/137/kit-200-start-your-own-business">Kit 200 - Start
-                                    your own business!</a></h4>
-
-                                <p>Complete kit to star your own business!</p>
-                            </li>
-                            <li>
-                                <h4><a href="/en/noticias/2012/01/131/kit-gelato">Kit Gelato</a></h4>
-
-                                <p>Produce delicous italian Gelato with quality and lowest price!</p>
-                            </li>
-                        </ol>
-                    </div>
-                </li>
-                <li>
-                    <h3 class="titlename top5">Courses: ice cream and chocolate </h3>
-
-                    <div>
-                        <ol>
-                            <li>
-                                <h4><a href="/en/cursos"><strong>05/11</strong>: Ice Cream Market </a></h4>
-                                Aimed at new entrepreneurs who are just starting out...
-                            </li>
-                            <li>
-                                <h4><a href="/en/cursos"><strong>08/11</strong>: Ice Cream - Beginners</a></h4>
-                                Consists of the Theory of Ice Cream, including the...
-                            </li>
-                            <li>
-                                <h4><a href="/en/cursos"><strong>10/11</strong>: Ice Cream Market </a></h4>
-                                Aimed at new entrepreneurs who are just starting out...
-                            </li>
-                            <li>
-                                <h4><a href="/en/cursos"><strong>12/11</strong>: Good Manufacturing Practices</a></h4>
-                                &#160;&#160; Finamac is launching a new product, the...
-                            </li>
-                        </ol>
-                    </div>
-                </li>
-                <li class="ultima">
-                    <h3 class="titlename top5">News</h3>
-
-                    <div>
-                        <ol>
-                            <li>
-                                <h4><a href="/en/noticias/2012/09/374/what-is-the-best-source-of-fat-for-ice-cream">What
-                                    Is The Best Source Of Fat For Ice Cream?</a></h4>
-
-                                <p>There is no doubt that foods with higher levels of fat have higher rates...</p>
-                            </li>
-                            <li>
-                                <h4><a href="/en/noticias/2012/09/372/preventive-maintenance">Preventive Maintenance</a>
-                                </h4>
-
-                                <p>Consider a car engine. From time to time we change the crankcase oil...</p>
-                            </li>
-                            <li>
-                                <h4>
-                                    <a href="/en/noticias/2012/08/361/solar-powered-ice-cream-cart-is-a-success-in-holland">Solar
-                                        powered ice-cream cart is a success in Holland</a></h4>
-
-                                <p>Did you know that there is an ice cream car that is solar powered?...</p>
-                            </li>
-                            <li>
-                                <h4><a href="/en/noticias/2012/08/362/what-is-pasteurization">What is
-                                    pasteurization?</a>
-                                </h4>
-
-                                <p>Created by a French scientist, Louis Pasteur, the pasteurization is...</p>
-                            </li>
-                        </ol>
-                    </div>
-                </li>
-            </ul>
+            <h3>Online chat ::
+                <!-- http://www.LiveZilla.net Chat Button Link Code --><a href="javascript:void(window.open('http://www.finamac.com.br/atendimento/livezilla.php?intgroup=YXRlbmRpbWVudG9FTg==&amp;hg=P0F0ZW5kaW1lbnRv&amp;reset=true','','width=590,height=890,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=no'))"><img width="54" height="10" border="0" alt="LiveZilla Live Help" src="http://www.finamac.com.br/atendimento/image.php?id=06&amp;hg=P0F0ZW5kaW1lbnRv"></a>
+                <noscript>&lt;div&gt;&lt;a
+                    href="http://www.finamac.com.br/atendimento/livezilla.php?intgroup=YXRlbmRpbWVudG9FTg==&amp;amp;hg=P0F0ZW5kaW1lbnRv&amp;amp;reset=true"
+                    target="_blank"&gt;Start Live Help Chat&lt;/a&gt;&lt;/div&gt;</noscript>
+                <!-- http://www.LiveZilla.net Chat Button Link Code --><!-- http://www.LiveZilla.net Tracking Code -->
+                <div style="display:none" id="livezilla_tracking"></div>
+                <script type="text/javascript">&lt;!--DON
+                'T REMOVE ANY LINE BREAKS OR TAGS --&gt;/* &lt;![CDATA[ */var script = document.createElement("script");script.type="text/javascript";var src = "http://www.finamac.com.br/atendimento/server.php?request=track&amp;output=jcrpt&amp;nse="+Math.random();setTimeout("script.src=src;document.getElementById('
+                livezilla_tracking
+                ').appendChild(script)",1);/* ]]&gt; */</script>
+                <!-- http://www.LiveZilla.net Tracking Code --> </h3>
             <br class="c"/>
 
-            <div id="getBlog">
-                <div id="footerSlider">
-                    <ul id="footerPics">
-                        <li class="active">
-                            <a href="http://www.finamac.com.br/en/produtos"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-familia-finamac-en.jpg') }}" width="820" height="349" border="0"/></a>
-                        </li>
-                        <li>
-                            <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-super-c2"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/supercplus-en.jpg') }}" width="820" height="349" border="0"/></a>
-                        </li>
-                        <li>
-                            <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-gyrofiller"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/gyrofiller-banner-botton-en.jpg') }}" width="820" height="349" border="0"/></a>
-                        </li>
-                        <li>
-                            <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-if-900"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-if900-en.jpg') }}" width="820" height="349" border="0"/></a>
-                        </li>
-                        <li>
-                            <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-suprema-br.jpg') }}" width="820" height="349" border="0"/>
-                        </li>
-                        <li>
-                            <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/chocolate-modelagem4.jpg') }}" width="820" height="349" border="0"/>
-                        </li>
-                        <li>
-                            <a href="http://www.finamac.com.br/en/produtos/chocolate/maquina-chocomachine"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-chocomachine-en.jpg') }}" width="820" height="349" border="0"/></a>
-                        </li>
-                        <li>
-                            <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-titan-12"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-titan12-en.jpg') }}" width="820" height="349" border="0"/></a>
-                        </li>
-                        <li>
-                            <a href="http://www.finamac.com.br/en/produtos/iniciante/maquina-sorvete-turbo-8"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-turbo8-en.jpg') }}" width="820" height="349" border="0"/></a>
-                        </li>
-                    </ul>
-                    <ul id="footerpagination"></ul>
+            {% include 'BeregIndexBundle:_Include:navigation.html.twig' %}
+        </div>
+    {% endblock %}
+    <!--/header-->
+    {% include 'BeregIndexBundle:_Include:rotate.html.twig' %}
+    {% block content %}
+        <div id="content-820p"><h1 class="titlename top5">{% block title_text %} Main page {% endblock %}</h1>
+
+            <div class="content">
+                <div id="artigo">
+                    <div class="post">
+
+                        {% block body_text %}
+                        {% endblock %}
+                    </div>
                 </div>
             </div>
+            <!--/content-->
+            <div class="footerContent">
+                <ul class="lista3-col">
+                    <li>
+                        <h3 class="titlename top5">Specials and Releases </h3>
+
+                        <div>
+                            <ol>
+                                <li>
+                                    <h4><a href="/en/noticias/2012/04/227/kit-ice-cream-production">Kit Ice-cream
+                                        Production!</a>
+                                    </h4>
+
+                                    <p>The complete kit for your Ice-cream production!</p>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="/en/noticias/2012/04/224/gyrofiller-automatic-equipment-for-ice-cream-filling-and-packing">Gyrofiller
+                                            - Automatic Equipment for ice cream filling and packing</a></h4>
+
+                                    <p>GYROFILLER - ROTARY MACHINE TO FILL, PACK AND LABEL ICE CREAM CONTAINERS</p>
+                                </li>
+                                <li>
+                                    <h4><a href="/en/noticias/2012/02/137/kit-200-start-your-own-business">Kit 200 -
+                                        Start your own business!</a></h4>
+
+                                    <p>Complete kit to star your own business!</p>
+                                </li>
+                                <li>
+                                    <h4><a href="/en/noticias/2012/01/131/kit-gelato">Kit Gelato</a></h4>
+
+                                    <p>Produce delicous italian Gelato with quality and lowest price!</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="titlename top5">Courses: ice cream and chocolate </h3>
+
+                        <div>
+                            <ol>
+                                <li>
+                                    <h4><a href="/en/cursos"><strong>05/11</strong>: Ice Cream Market </a></h4>
+                                    Aimed at new entrepreneurs who are just starting out...
+                                </li>
+                                <li>
+                                    <h4><a href="/en/cursos"><strong>08/11</strong>: Ice Cream - Beginners</a></h4>
+                                    Consists of the Theory of Ice Cream, including the...
+                                </li>
+                                <li>
+                                    <h4><a href="/en/cursos"><strong>10/11</strong>: Ice Cream Market </a></h4>
+                                    Aimed at new entrepreneurs who are just starting out...
+                                </li>
+                                <li>
+                                    <h4><a href="/en/cursos"><strong>12/11</strong>: Good Manufacturing Practices</a>
+                                    </h4>
+                                    &#160;&#160; Finamac is launching a new product, the...
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="ultima">
+                        <h3 class="titlename top5">News</h3>
+
+                        <div>
+                            <ol>
+                                <li>
+                                    <h4><a href="/en/noticias/2012/09/374/what-is-the-best-source-of-fat-for-ice-cream">What
+                                        Is The Best Source Of Fat For Ice Cream?</a></h4>
+
+                                    <p>There is no doubt that foods with higher levels of fat have higher rates...</p>
+                                </li>
+                                <li>
+                                    <h4><a href="/en/noticias/2012/09/372/preventive-maintenance">Preventive
+                                        Maintenance</a>
+                                    </h4>
+
+                                    <p>Consider a car engine. From time to time we change the crankcase oil...</p>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <a href="/en/noticias/2012/08/361/solar-powered-ice-cream-cart-is-a-success-in-holland">Solar
+                                            powered ice-cream cart is a success in Holland</a></h4>
+
+                                    <p>Did you know that there is an ice cream car that is solar powered?...</p>
+                                </li>
+                                <li>
+                                    <h4><a href="/en/noticias/2012/08/362/what-is-pasteurization">What is
+                                        pasteurization?</a>
+                                    </h4>
+
+                                    <p>Created by a French scientist, Louis Pasteur, the pasteurization is...</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+                <br class="c"/>
+
+                <div id="getBlog">
+                    <div id="footerSlider">
+                        <ul id="footerPics">
+                            <li class="active">
+                                <a href="http://www.finamac.com.br/en/produtos"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-familia-finamac-en.jpg') }}" width="820" height="349" border="0"/></a>
+                            </li>
+                            <li>
+                                <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-super-c2"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/supercplus-en.jpg') }}" width="820" height="349" border="0"/></a>
+                            </li>
+                            <li>
+                                <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-gyrofiller"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/gyrofiller-banner-botton-en.jpg') }}" width="820" height="349" border="0"/></a>
+                            </li>
+                            <li>
+                                <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-if-900"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-if900-en.jpg') }}" width="820" height="349" border="0"/></a>
+                            </li>
+                            <li>
+                                <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/footer-suprema-br.jpg') }}" width="820" height="349" border="0"/>
+                            </li>
+                            <li>
+                                <img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/chocolate-modelagem4.jpg') }}" width="820" height="349" border="0"/>
+                            </li>
+                            <li>
+                                <a href="http://www.finamac.com.br/en/produtos/chocolate/maquina-chocomachine"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-chocomachine-en.jpg') }}" width="820" height="349" border="0"/></a>
+                            </li>
+                            <li>
+                                <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-titan-12"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-titan12-en.jpg') }}" width="820" height="349" border="0"/></a>
+                            </li>
+                            <li>
+                                <a href="http://www.finamac.com.br/en/produtos/iniciante/maquina-sorvete-turbo-8"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/galleries/footer-en/banner-inferior-turbo8-en.jpg') }}" width="820" height="349" border="0"/></a>
+                            </li>
+                        </ul>
+                        <ul id="footerpagination"></ul>
+                    </div>
+                </div>
+            </div>
+            <br class="c"/>
         </div>
-
-        <script>
-            $(document).ready(function () {
-                // footSlider = new customSlider('#footerPics', '#footerSlider', {slideSpeed: 500, slideTimeout: 5000, objectInstance: 'footSlider', automatic: true});
-                footerPics = new customFadingSlider('#footerPics', {slideSpeed:500, slideTimeout:15000, objectInstance:'footerPics', paginationList:'#footerpagination'});
-            });
-        </script>
-
-        <br class="c"/>
-    </div>
+    {% endblock %}
     <!--/content-820-->
-    <div id="sidebar"><h3 class="titlename top5 sideAds"><span>Kit 200</span></h3>
-        <a href=""><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banner-lateral-kitpicoleteira-en.jpg') }}" width="160" height="592" alt="Kit 200"/></a>
+    {% block sidebar %}
+        <div id="sidebar"><h3 class="titlename top5 sideAds"><span>Kit 200</span></h3>
+            <a href=""><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banner-lateral-kitpicoleteira-en.jpg') }}" width="160" height="592" alt="Kit 200"/></a>
 
-        <div class="boxParceiro" style="margin-top: 17px;">
-            <h3 class="titlename top5 sideAds">CMax Aerated Ice Cream</h3>
-            <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-c-max"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/cmax.jpg') }}" width="160" height="145" alt="CMax Aerated Ice Cream"/></a>
+            <div class="boxParceiro" style="margin-top: 17px;">
+                <h3 class="titlename top5 sideAds">CMax Aerated Ice Cream</h3>
+                <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-c-max"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/cmax.jpg') }}" width="160" height="145" alt="CMax Aerated Ice Cream"/></a>
+            </div>
+            <div class="boxParceiro" style="margin-top: 15px; margin-bottom: 1px;">
+                <h3 class="titlename top5 sideAds">Turbo 25 Popsicle Machine</h3>
+                <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-turbo-25"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/turbo-25.jpg') }}" width="160" height="145" alt="Turbo 25 Popsicle Machine"/></a>
+            </div>
+            <div class="boxParceiro" style="margin-top: 15px; margin-bottom: 1px;">
+                <h3 class="titlename top5 sideAds">Turbo 100 Popsicle Machine</h3>
+                <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-turbo-100"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/turbo-100.jpg') }}" width="160" height="145" alt="Turbo 100 Popsicle Machine"/></a>
+            </div>
         </div>
-        <div class="boxParceiro" style="margin-top: 15px; margin-bottom: 1px;">
-            <h3 class="titlename top5 sideAds">Turbo 25 Popsicle Machine</h3>
-            <a href="http://www.finamac.com.br/en/produtos/intermediario/maquina-sorvete-turbo-25"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/turbo-25.jpg') }}" width="160" height="145" alt="Turbo 25 Popsicle Machine"/></a>
-        </div>
-        <div class="boxParceiro" style="margin-top: 15px; margin-bottom: 1px;">
-            <h3 class="titlename top5 sideAds">Turbo 100 Popsicle Machine</h3>
-            <a href="http://www.finamac.com.br/en/produtos/industrial/maquina-sorvete-turbo-100"><img src="{{ asset('/bundles/beregindex/images/contentFiles/image/banners/banners-160x160/turbo-100.jpg') }}" width="160" height="145" alt="Turbo 100 Popsicle Machine"/></a>
-        </div>
-    </div>
+    {% endblock %}
     <br class="c"/>
     </div>
 
     {% include 'BeregIndexBundle:_Include:footer.html.twig' %}
+{% endblock %}
+{% block scripts %}
+    <script>
+        $(document).ready(function () {
+            headPics = new customFadingSlider('#headPics', {slideSpeed:500, slideTimeout:10000, objectInstance:'headPics', paginationList:'#paginatepics'});
+            produtoHome = new sliderProdutoHome({ objectInstance:'produtoHome' });
+            // footSlider = new customSlider('#footerPics', '#footerSlider', {slideSpeed: 500, slideTimeout: 5000, objectInstance: 'footSlider', automatic: true});
+            footerPics = new customFadingSlider('#footerPics', {slideSpeed:500, slideTimeout:15000, objectInstance:'footerPics', paginationList:'#footerpagination'});
+        });
+    </script>
 {% endblock %}
 </body>
 </html>

@@ -61,9 +61,11 @@ html body.osWindows div#wrapper div#header div#logo a { display:block; backgroun
 .leftContent { width:780px; margin:0px 10px 20px 0px; float:left;}
 .proSlider { border: 3px solid #c8c7c7; margin-bottom:15px;}
 #model-prod { padding:20px 25px 20px 45px;}
-#model-prod h2 { text-transform:uppercase; color:#f67027; font-size:36px; margin-bottom:20px;}
-#model-prod ul { list-style:none;}
-#model-prod li { position:relative; display:block; width:202px; height:285px; margin-right:15px; float:left; background:url(/bundles/beregindex/images/i/libottom.gif) #fff repeat-x bottom; margin-bottom:20px;}
+div#content-990p div.content div#model-prod p {margin-bottom: 25px; font-size: 14px; line-height: 20px;}
+#model-prod h1 { text-transform:uppercase; color:#f67027; font-size:36px; margin-bottom:20px;}
+#model-prod ul.list { list-style:none;}
+#model-prod ul.list li { position:relative; display:block; width:419px; height:285px; margin-right:15px; float:left; background:url(/bundles/beregindex/images/i/libottom.gif) #fff repeat-x bottom; margin-bottom:20px;}
+#model-prod ul.list li img {width:419px; height:153px;}
 #model-prod h3 a { display:block; color:#000; font-size:18px; padding:2px 5px 5px 5px; border-bottom: 1px solid #acacac; min-height:40px; margin:0px 5px 0px 5px;}
 #model-prod span { display:block;  padding:5px }
 #model-prod .tipo  { color:#005cff;}
